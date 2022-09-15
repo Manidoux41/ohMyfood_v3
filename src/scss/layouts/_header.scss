@@ -1,0 +1,36 @@
+@use '../abstracts/' as *;
+
+header {
+    @include flexBox(column, center, center);
+    .title{
+        @include flexBox(row, center, center);
+        padding: 15px;
+        h1 {
+            font-family: 'Shrikhand', serif;
+        }
+    }
+    .form  {
+        width: 100%;
+        background: $secondaryColor;
+        @include flexBox(row, center, center);
+        padding: 25px 0;
+        form {
+            background: $secondaryColor;
+            gap: 10px;
+            margin-left: 65px;
+            input[type=text]{
+                background:  $secondaryColor;
+                border: none;
+                outline: none;
+            }
+            input[type=text]:focus{
+                background:  $secondaryColor;
+            }
+            input[type=text]::placeholder{
+                background:  $secondaryColor;
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+}

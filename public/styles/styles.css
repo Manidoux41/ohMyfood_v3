@@ -16,24 +16,40 @@ header {
   justify-content: center;
   align-items: center;
 }
-header h1 {
-  font-family: "Shrikhand", serif;
-}
-header form {
-  align-self: center;
-  justify-self: center;
+header .title {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  padding: 15px;
 }
-header form input[type=text] {
+header .title h1 {
+  font-family: "Shrikhand", serif;
+}
+header .form {
+  width: 100%;
+  background: #FF79DA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+header .form form {
+  background: #FF79DA;
+  gap: 10px;
+  margin-left: 65px;
+}
+header .form form input[type=text] {
+  background: #FF79DA;
   border: none;
   outline: none;
 }
-header form input[type=text]::placeholder {
-  background: #9356DC;
+header .form form input[type=text]:focus {
+  background: #FF79DA;
+}
+header .form form input[type=text]::placeholder {
+  background: #FF79DA;
   color: black;
   font-weight: 600;
 }
