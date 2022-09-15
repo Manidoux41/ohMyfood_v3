@@ -1,0 +1,15 @@
+{
+  "name": "ohmyfood_v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss/main.scss public/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
