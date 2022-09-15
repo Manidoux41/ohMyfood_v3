@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.form  {
+    width: 100%;
+    background: $formColor;
+    @include flexBox(row, center, center);
+    padding: 35px 0;
+    form {
+        background: $formColor;
+        gap: 10px;
+        margin-left: 65px;
+        input[type=text]{
+            background:  $formColor;
+            border: none;
+            outline: none;
+        }
+        input[type=text]:focus{
+            background:  $formColor;
+        }
+        input[type=text]::placeholder{
+            background:  $formColor;
+            color: black;
+            font-weight: 600;
+        }
+    }
+}

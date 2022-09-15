@@ -6,3 +6,12 @@
     justify-content: #{$justify};
     align-items: #{$align};
 }
+
+@mixin buttonHome() {
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: $blue;
+    color: $whiteColor;
+    font-size: 16px;
+    border: none;
+}

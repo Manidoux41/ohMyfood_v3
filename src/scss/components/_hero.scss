@@ -1,0 +1,20 @@
+@use '../abstracts/' as *;
+
+#hero {
+    padding: 25px;
+    background: $clearColor;
+    @include flexBox(column, space-between, center);
+    gap: 15px;
+    h1{
+        font-size: 35px;
+        text-align: center;
+        @include flexBox(column, center, center);
+    }
+    .slogan {
+        @include flexBox(column, center, center);
+    }
+    button{
+        @include buttonHome();
+        margin-top: 15px;
+    }
+}
