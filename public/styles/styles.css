@@ -10,15 +10,32 @@ body {
   background-color: #9356DC;
 }
 
-h1 {
-  font-family: "Shrikhand", serif;
-}
-
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+header h1 {
+  font-family: "Shrikhand", serif;
+}
+header form {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header form input[type=text] {
+  border: none;
+  outline: none;
+}
+header form input[type=text]::placeholder {
+  background: #9356DC;
+  color: black;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */

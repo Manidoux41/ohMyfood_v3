@@ -2,4 +2,22 @@
 
 header {
     @include flexBox(column, center, center);
+    h1 {
+        font-family: 'Shrikhand', serif;
+    }
+    form {
+        align-self: center;
+        justify-self: center;
+        @include flexBox(row, center, center);
+        gap: 5px;
+        input[type=text]{
+            border: none;
+            outline: none;
+        }
+        input[type=text]::placeholder{
+            background: $primaryColor;
+            color: black;
+            font-weight: 600;
+        }
+    }
 }
