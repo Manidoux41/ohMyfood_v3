@@ -1,1 +1,20 @@
 @use '../abstracts/' as *;
+
+#functionnality {
+    padding: 25px;
+    @include flexBox(column, center, center);
+    h2 {
+        justify-self: flex-start !important;
+        padding: 25px;
+    }
+    ol {
+        @include flexBox(row, space-between, center);
+        gap:1.5rem;
+        li {
+            padding: 15px 25px;
+            background: grey;
+            color: $whiteColor;
+            border-radius: 16px;
+        }
+    }
+}

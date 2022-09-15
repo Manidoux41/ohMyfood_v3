@@ -89,4 +89,29 @@ header .title h1 {
   margin-top: 15px;
 }
 
+#functionnality {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#functionnality h2 {
+  justify-self: flex-start !important;
+  padding: 25px;
+}
+#functionnality ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+#functionnality ol li {
+  padding: 15px 25px;
+  background: grey;
+  color: #fff;
+  border-radius: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */
