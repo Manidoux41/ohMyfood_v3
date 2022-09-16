@@ -109,11 +109,19 @@ header .title h1 {
   gap: 1.5rem;
 }
 #functionnality ol li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   padding: 15px 25px;
   background: #F6F6F6;
   border-radius: 8px;
   list-style-type: none;
   flex-grow: 1;
+}
+#functionnality ol li::before {
+  content: "1";
 }
 #functionnality ol li a {
   text-decoration: none;

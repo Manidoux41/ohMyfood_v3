@@ -12,11 +12,16 @@
         flex-wrap: wrap;
         gap:1.5rem;
         li {
+            @include flexBox(row, center, center);
+            gap: 15px;
             padding: 15px 25px;
             background: $clearColor;
             border-radius: 8px;
             list-style-type: none;
             flex-grow: 1;
+        &::before{
+            content: "1";
+        }
             a {
                text-decoration: none;
                color: #323232;
