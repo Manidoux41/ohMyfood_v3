@@ -107,21 +107,40 @@ header .title h1 {
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  counter-reset: section;
+}
+@media screen and (max-width: 992px) {
+  #functionnality ol {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #functionnality ol li {
+  width: 300px;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 15px 25px;
+  padding: 15px;
   background: #F6F6F6;
   border-radius: 8px;
   list-style-type: none;
   flex-grow: 1;
 }
 #functionnality ol li::before {
-  content: "1";
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  background-color: #D36BDA;
+  padding: 6px 11px;
+  border-radius: 50%;
+  left: -15px;
+}
+#functionnality ol li .fa-solid {
+  color: #99E2D0;
 }
 #functionnality ol li a {
   text-decoration: none;
