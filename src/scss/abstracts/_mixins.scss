@@ -15,3 +15,6 @@
     font-size: 16px;
     border: none;
 }
+@mixin baseShadow {
+    box-shadow: 5px 5px 10px $boxshadowColor;
+}
