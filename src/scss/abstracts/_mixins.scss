@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-@mixin flexBox ($flex-direction, $justify, $align){
+@mixin flexBox ($flex-direction, $justify, $align) {
     display: flex;
     flex-direction: #{$flex-direction};
     justify-content: #{$justify};
@@ -14,4 +14,7 @@
     color: $whiteColor;
     font-size: 16px;
     border: none;
+}
+@mixin baseShadow {
+    box-shadow: 5px 5px 10px $boxshadowColor;
 }

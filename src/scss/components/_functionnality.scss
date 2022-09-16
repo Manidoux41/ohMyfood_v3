@@ -1,9 +1,51 @@
 @use '../abstracts/' as *;
-
-#functionality {
-    @include flexBox(column, space-between, center);
-    padding: 35px;
+/*********************************FUNCTIONNALITY******************************************/
+#functionnality {
+    padding: 25px;
+    @include flexBox(column, center, center);
+    h2 {
+        justify-self: flex-start !important;
+        padding: 25px;
+    }
     ol {
-        padding: 35px;
+        @include flexBox(row, space-between, center);
+        gap:2.5rem;
+        counter-reset: section;
+        @media screen and (max-width:992px) {
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+          }        
+        li {
+            width: 300px;
+            position: relative;
+            @include flexBox(row, center, center);
+            gap: 15px;
+            padding: 15px 10px;
+            background: $clearColor;
+            border-radius: 8px;
+            list-style-type: none;
+            flex-grow: 1;
+            @include baseShadow();
+        &::before{
+            position: absolute;
+            counter-increment: section;
+            content: counter(section);
+            background-color: $blueCounter;
+            color: $whiteColor;
+            padding: 6px 11px;
+            border-radius: 50%;
+            left: -15px;
+        }
+            .fa-solid{
+                font-size: 20px;
+                color: $thirdColor;
+            }
+            a {
+               text-decoration: none;
+               color: #323232;
+            }
+        }
+
     }
 }
