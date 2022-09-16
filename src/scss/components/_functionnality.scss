@@ -9,10 +9,9 @@
     }
     ol {
         @include flexBox(row, space-between, center);
-        flex-wrap: wrap;
         gap:2.5rem;
         counter-reset: section;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:992px) {
             flex-direction:column;
             justify-content: center;
             align-items: center;
@@ -22,7 +21,7 @@
             position: relative;
             @include flexBox(row, center, center);
             gap: 15px;
-            padding: 15px;
+            padding: 15px 10px;
             background: $clearColor;
             border-radius: 8px;
             list-style-type: none;
@@ -32,12 +31,14 @@
             position: absolute;
             counter-increment: section;
             content: counter(section);
-            background-color: $blue;
+            background-color: $blueCounter;
+            color: $whiteColor;
             padding: 6px 11px;
             border-radius: 50%;
             left: -15px;
         }
             .fa-solid{
+                font-size: 20px;
                 color: $thirdColor;
             }
             a {

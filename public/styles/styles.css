@@ -105,11 +105,10 @@ header .title h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 2.5rem;
   counter-reset: section;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #functionnality ol {
     flex-direction: column;
     justify-content: center;
@@ -124,7 +123,7 @@ header .title h1 {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 15px;
+  padding: 15px 10px;
   background: #F6F6F6;
   border-radius: 8px;
   list-style-type: none;
@@ -135,12 +134,14 @@ header .title h1 {
   position: absolute;
   counter-increment: section;
   content: counter(section);
-  background-color: #D36BDA;
+  background-color: #9356DC;
+  color: #fff;
   padding: 6px 11px;
   border-radius: 50%;
   left: -15px;
 }
 #functionnality ol li .fa-solid {
+  font-size: 20px;
   color: #99E2D0;
 }
 #functionnality ol li a {
