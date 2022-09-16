@@ -105,13 +105,19 @@ header .title h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 #functionnality ol li {
   padding: 15px 25px;
-  background: grey;
-  color: #fff;
-  border-radius: 16px;
+  background: #F6F6F6;
+  border-radius: 8px;
+  list-style-type: none;
+  flex-grow: 1;
+}
+#functionnality ol li a {
+  text-decoration: none;
+  color: #323232;
 }
 
 /*# sourceMappingURL=styles.css.map */

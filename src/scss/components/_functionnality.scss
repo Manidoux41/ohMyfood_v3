@@ -9,12 +9,19 @@
     }
     ol {
         @include flexBox(row, space-between, center);
+        flex-wrap: wrap;
         gap:1.5rem;
         li {
             padding: 15px 25px;
-            background: grey;
-            color: $whiteColor;
-            border-radius: 16px;
+            background: $clearColor;
+            border-radius: 8px;
+            list-style-type: none;
+            flex-grow: 1;
+            a {
+               text-decoration: none;
+               color: #323232;
+            }
         }
+
     }
 }
