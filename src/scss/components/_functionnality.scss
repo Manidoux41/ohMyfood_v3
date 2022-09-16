@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+#functionality {
+    @include flexBox(column, space-between, center);
+    padding: 35px;
+    ol {
+        padding: 35px;
+    }
+}
