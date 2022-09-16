@@ -151,5 +151,36 @@ header .title h1 {
 }
 
 /*********************************RETAURANT CARDS******************************************/
+#restaurants h2 {
+  text-align: center;
+  padding: 25px;
+}
+#restaurants .cardContainer {
+  height: 600px;
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media screen and (max-width: 992px) {
+  #restaurants .cardContainer {
+    flex-direction: column;
+  }
+}
+#restaurants .card {
+  border: 5px solid #fff;
+  border-radius: 16px;
+  width: 45%;
+  height: 250px;
+  overflow: hidden;
+}
+#restaurants .card img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=styles.css.map */

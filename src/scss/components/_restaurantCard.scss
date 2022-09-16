@@ -1,3 +1,33 @@
 @use '../abstracts/' as *;
 
 /*********************************RETAURANT CARDS******************************************/
+#restaurants {
+    
+    h2{
+        text-align: center;
+        padding: 25px;
+    }
+    .cardContainer{
+        height: 600px;
+        width: 900px;
+        margin: 0 auto;
+        @include flexBox(row, space-between, center);
+        flex-wrap: wrap;
+        gap: 16px;
+       @media screen and (max-width:992px) {
+                flex-direction: column;
+        }        
+    }
+    .card{
+        // align-self: center;
+        border: 5px solid $whiteColor;
+        border-radius: 16px;
+        width: 45%;
+        height: 250px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
