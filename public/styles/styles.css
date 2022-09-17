@@ -185,7 +185,6 @@ header .title h1 {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  padding: 16px;
   box-shadow: 5px 5px 10px rgba(120, 64, 64, 0.4666666667);
 }
 @media screen and (max-width: 768px) {

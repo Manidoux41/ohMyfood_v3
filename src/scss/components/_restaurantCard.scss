@@ -17,7 +17,6 @@
             width:100%;
             border-radius: 16px;
             overflow: hidden;
-            padding: 16px;
             @include baseShadow();
             @media screen and (max-width:768px) {
                 width: 100%;
