@@ -142,7 +142,7 @@ header .title h1 {
   border-radius: 8px;
   list-style-type: none;
   flex-grow: 1;
-  box-shadow: 5px 5px 10px rgba(120, 64, 64, 0.4666666667);
+  box-shadow: 5px 5px 10px hsla(0deg, 30%, 36%, 0.467);
 }
 #functionnality ol li::before {
   position: absolute;
@@ -193,7 +193,7 @@ header .title h1 {
   height: 240px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px rgba(120, 64, 64, 0.4666666667);
+  box-shadow: 5px 5px 10px hsla(0deg, 30%, 36%, 0.467);
 }
 @media screen and (max-width: 992px) {
   #restaurants .cardContainer .card {
