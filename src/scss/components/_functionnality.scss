@@ -17,11 +17,19 @@
             align-items: center;
           }        
         li {
+<<<<<<< HEAD
             width: 268px;
             position: relative;
             @include flexBox(row, center, center);
             gap: 15px;
             padding: 15px 30px;
+=======
+            width: 300px;
+            position: relative;
+            @include flexBox(row, center, center);
+            gap: 15px;
+            padding: 15px 10px;
+>>>>>>> 8b73757c01952afa66aff4621c873e9bdc6f499c
             background: $clearColor;
             border-radius: 8px;
             list-style-type: none;
