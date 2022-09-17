@@ -169,10 +169,9 @@ header .title h1 {
   gap: 25px;
 }
 #restaurants .cardContainer {
-  width: 900px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 32px;
 }
 @media screen and (max-width: 768px) {
   #restaurants .cardContainer {
@@ -186,12 +185,12 @@ header .title h1 {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  gap: 16px;
+  padding: 16px;
   box-shadow: 5px 5px 10px rgba(120, 64, 64, 0.4666666667);
 }
 @media screen and (max-width: 768px) {
   #restaurants .cardContainer .card {
-    width: 38%;
+    width: 100%;
   }
 }
 #restaurants .cardContainer .card .card__link {
