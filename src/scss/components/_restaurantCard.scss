@@ -3,23 +3,28 @@
 /*********************************RETAURANT CARDS******************************************/
 #restaurants {
     margin-top: 35px;
+    margin-bottom: 35px;
     @include flexBox(column, center, center);
     gap:25px;
    
     .cardContainer {
+        width: 70%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
         @media screen and (max-width:768px) {
+            width: 100%;
             @include flexBox(column, center, center);
         }
         .card{
-            width:100%;
+            height: 240px;
             border-radius: 16px;
             overflow: hidden;
             @include baseShadow();
             @media screen and (max-width:768px) {
-                width: 100%;
+                width: 90%;
+                height: 240px;
             }
             .card__link{
                 width: 100%;
@@ -27,7 +32,7 @@
                 flex-direction: column;
                 .image {
                     width: 100%;
-                    height: 250px;
+                    height: 180px;
                     img{
                         object-fit: cover;
                         width: 100%;
