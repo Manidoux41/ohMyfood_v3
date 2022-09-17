@@ -2,32 +2,47 @@
 
 /*********************************RETAURANT CARDS******************************************/
 #restaurants {
-    
-    h2{
-        text-align: center;
-        padding: 25px;
-    }
-    .cardContainer{
-        height: 600px;
+    margin-top: 35px;
+    @include flexBox(column, center, center);
+    gap:25px;
+   
+    .cardContainer {
         width: 900px;
-        margin: 0 auto;
-        @include flexBox(row, space-between, center);
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-       @media screen and (max-width:992px) {
+        @media screen and (max-width:768px) {
+            @include flexBox(column, center, center);
+        }
+        .card{
+            width:100%;
+            border-radius: 16px;
+            overflow: hidden;
+            gap: 16px;
+            @include baseShadow();
+            @media screen and (max-width:768px) {
+                width: 38%;
+            }
+            .card__link{
+                width: 100%;
+                display:flex;
                 flex-direction: column;
-        }        
-    }
-    .card{
-        // align-self: center;
-        border: 5px solid $whiteColor;
-        border-radius: 16px;
-        width: 45%;
-        height: 250px;
-        overflow: hidden;
-        img {
-            width: 100%;
-            object-fit: cover;
+                .image {
+                    width: 100%;
+                    height: 250px;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .content {
+                    background-color: $whiteColor;
+                    padding: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
         }
     }
 }
