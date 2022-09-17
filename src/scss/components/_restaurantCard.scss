@@ -13,7 +13,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:992px) {
             width: 100%;
             @include flexBox(column, center, center);
         }
@@ -22,7 +22,7 @@
             border-radius: 16px;
             overflow: hidden;
             @include baseShadow();
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:992px) {
                 width: 90%;
                 height: 240px;
             }

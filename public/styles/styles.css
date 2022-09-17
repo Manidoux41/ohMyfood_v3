@@ -176,7 +176,7 @@ header .title h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #restaurants .cardContainer {
     width: 100%;
     display: flex;
@@ -191,7 +191,7 @@ header .title h1 {
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(120, 64, 64, 0.4666666667);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #restaurants .cardContainer .card {
     width: 90%;
     height: 240px;
