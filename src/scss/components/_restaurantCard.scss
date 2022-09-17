@@ -2,6 +2,7 @@
 
 /*********************************RETAURANT CARDS******************************************/
 #restaurants {
+    background-color: $clearColor;
     margin-top: 35px;
     margin-bottom: 35px;
     @include flexBox(column, center, center);

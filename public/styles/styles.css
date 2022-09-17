@@ -165,6 +165,7 @@ header .title h1 {
 
 /*********************************RETAURANT CARDS******************************************/
 #restaurants {
+  background-color: #F6F6F6;
   margin-top: 35px;
   margin-bottom: 35px;
   display: flex;
