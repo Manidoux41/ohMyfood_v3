@@ -11,13 +11,13 @@
         @include flexBox(row, space-between, center);
         gap:2.5rem;
         counter-reset: section;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:992px) {
             flex-direction:column;
             justify-content: center;
             align-items: center;
           }        
         li {
-            // width: 300px;
+            width: 268px;
             position: relative;
             @include flexBox(row, center, center);
             gap: 15px;
