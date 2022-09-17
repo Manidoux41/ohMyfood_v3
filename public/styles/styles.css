@@ -130,19 +130,23 @@ header .title h1 {
   }
 }
 #functionnality ol li {
-  width: 268px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background: #F6F6F6;
   border-radius: 8px;
   list-style-type: none;
   flex-grow: 1;
   box-shadow: 5px 5px 10px hsla(0deg, 30%, 36%, 0.467);
+}
+@media screen and (max-width: 992px) {
+  #functionnality ol li {
+    width: 100%;
+  }
 }
 #functionnality ol li::before {
   position: absolute;
@@ -191,6 +195,7 @@ header .title h1 {
   }
 }
 #restaurants .cardContainer .card {
+  width: 100%;
   height: 240px;
   border-radius: 16px;
   overflow: hidden;

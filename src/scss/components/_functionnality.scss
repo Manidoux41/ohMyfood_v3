@@ -17,16 +17,19 @@
             align-items: center;
           }        
         li {
-            width: 268px;
+            // width: 400px;
             position: relative;
             @include flexBox(row, center, center);
             gap: 15px;
-            padding: 15px 30px;
+            padding: 15px 40px;
             background: $clearColor;
             border-radius: 8px;
             list-style-type: none;
             flex-grow: 1;
             @include baseShadow();
+            @media screen and (max-width:992px) {
+                width: 100%;
+              }        
         &::before{
             position: absolute;
             counter-increment: section;
